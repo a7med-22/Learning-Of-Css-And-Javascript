@@ -1,0 +1,73 @@
+body {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.one {
+  border: 5px solid red;
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+div.one p {
+  border: inherit;
+  text-align: center;
+  background-color: #ddd;
+  padding: inherit;
+}
+
+div.two {
+  border: 5px solid #009688;
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+div.two p {
+  border: inherit;
+  text-align: center;
+  background-color: #ddd;
+  padding: inherit;
+}
+
+.style1,
+.style2,
+.style3 {
+  margin: 10px;
+}
+
+.style1 {
+  font-family: "open sans";
+  font-style: italic;
+  text-align: center;
+}
+
+.style2 {
+  font-family: cairo;
+  font-style: italic;
+  text-align: center;
+}
+.style3 {
+  font-family: jomhuria;
+  font-style: italic;
+  text-align: center;
+}
+
+.style4 {
+  font-size: 2.5rem;
+}
+
+.style4,
+.style5,
+.style6 {
+  text-align: center;
+  margin: 20px;
+}
+.style5 {
+  font-size: 2rem;
+}
+
+.style6 {
+  font-size: 1.5rem;
+}

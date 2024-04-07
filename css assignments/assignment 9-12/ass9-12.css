@@ -1,0 +1,53 @@
+div {
+    display: inline-block;
+    outline: 5px solid black;
+    padding: 10px;
+    margin:5px;
+}
+
+.form1 {
+    border: 5px solid red ;
+
+}
+
+.form2 {
+    border-color: blue green;
+    border-style: solid;
+    border-width: 5px;
+
+}
+
+.form4,.form5,.form6 {
+    width:400px;
+}
+
+.form3 {
+    border-color: red green blue yellow ;
+    border-style: dashed;
+    border-width: 5px;
+}
+.form4 {
+    display:block;
+    outline:none;
+    background-color: #ddd;
+
+    border-left: solid 5px rgb(200, 51, 76);
+    
+   
+}
+.form5 {
+    border-color: red green blue yellow ;
+    border-style: dashed;
+    border-width: 5px;
+    visibility: hidden;
+    display:block;
+}
+.form6 {
+    outline:none;
+    background-color: #ddd;
+    display:block;
+
+    border-left: solid 5px rgb(13, 119, 115);
+    
+}
+

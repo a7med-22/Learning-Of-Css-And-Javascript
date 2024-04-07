@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  --background-color: #ff5722;
+  --color: white;
+  --color2: #009688;
+}
+
+.task-1 {
+  background-color: var(--background-color);
+  color: var(--color);
+  width: 150px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 40px;
+  position: relative;
+}
+
+.task-1::before,
+.task-1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--background-color);
+  z-index: -1;
+}
+
+.task-1::before {
+  transform: translate(0%, -4%) skew(-10deg, -10deg);
+  -webkit-transform: translate(0%, -4%) skew(-10deg, -10deg);
+  -moz-transform: translate(0%, -4%) skew(-10deg, -10deg);
+  -ms-transform: translate(0%, -4%) skew(-10deg, -10deg);
+  -o-transform: translate(0%, -4%) skew(-10deg, -10deg);
+}
+.task-1::after {
+  transform: translate(0%, -4%) skew(10deg, 10deg);
+  -moz-transform: translate(0%, -4%) skew(10deg, 10deg);
+  -ms-transform: translate(0%, -4%) skew(10deg, 10deg);
+  -o-transform: translate(0%, -4%) skew(10deg, 10deg);
+  -webkit-transform: translate(0%, -4%) skew(10deg, 10deg);
+}
+
+hr {
+  height: 10px;
+  background-color: darkgoldenrod;
+}
+
+.task-2 {
+  background-color: var(--color2);
+  width: 150px;
+  margin: 60px auto;
+  padding: 20px;
+  font-weight: bold;
+  color: var(--color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-2::before {
+  background-color: var(--color2);
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: skew(10deg) translate(-10%);
+  -webkit-transform: skew(10deg) translate(-10%);
+  -moz-transform: skew(10deg) translate(-10%);
+  -ms-transform: skew(10deg) translate(-10%);
+  -o-transform: skew(10deg) translate(-10%);
+}
+.task-2::after {
+  background-color: var(--color2);
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  transform: skew(10deg) translate(-110px);
+  -webkit-transform: skew(10deg) translate(-110px);
+  -moz-transform: skew(10deg) translate(-110px);
+  -ms-transform: skew(10deg) translate(-110px);
+  -o-transform: skew(10deg) translate(-110px);
+}
+
+.task-3 {
+  background-color: #607d8b;
+  width: 200px;
+  height: 200px;
+  margin: 150px auto 50px;
+  position: relative;
+  border-bottom: solid black 5px;
+}
+
+.task-3::before {
+  background-color: black;
+  content: "";
+  width: 65%;
+  height: 67%;
+  position: absolute;
+  border-bottom: solid white 10px;
+  border-right: solid white 10px;
+  transform: rotate(45deg) translate(50%, 50%);
+  -webkit-transform: rotate(45deg) translate(-21%, -50%);
+  -moz-transform: rotate(45deg) translate(50%, 50%);
+  -ms-transform: rotate(45deg) translate(50%, 50%);
+  -o-transform: rotate(45deg) translate(50%, 50%);
+}
+
+.task-3::after {
+  content: "Elzero";
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  width: 20%;
+  height: 20%;
+  bottom: -15px;
+  left: 0;
+  padding: 10px;
+}
+
+.task-4 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 120px auto;
+  font-weight: bold;
+  font-size: 30px;
+  transform-style: preserve-3d;
+  color: white;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.task-4::before {
+  content: "Front";
+  background-color: #fa3664;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+}
+
+.task-4::after {
+  content: "Back";
+  background-color: #1692fc;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.task-4:hover {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+}
+.box {
+  perspective: 200px;
+}

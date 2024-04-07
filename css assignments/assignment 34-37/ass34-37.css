@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.one ,.two {
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 55px;    
+
+}
+
+.one {
+    background-color: #eeee;
+
+
+}
+
+.two:empty{
+    background-color: red;
+}
+
+
+.task-2 {
+    text-align: center;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #ddd;
+    width: 400px;
+    position: relative;
+    
+}
+
+.task-2::first-letter {
+    position: absolute;
+    display: inline-block;
+    background-color: red;
+    /* width: 20px; */
+    /* height: 20px; */
+    padding: 20px 15px;
+    margin-left: -114px;
+    margin-right: 14px;
+    /* content: ""; */
+    color: white;
+
+}
+
+.task-3 p {
+    background-color: #eee;
+    padding:20px;
+    width:600px;
+    position:relative;
+    margin: 20px auto;
+    border-left: solid #e91e63 6px ;
+}
+
+.task-3 p::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    /* background-color: #e91e63; */
+    width: 0;
+    left: -40px;
+    top: 50%;
+    margin-top: -17px;
+    border-style: solid;
+    border-width: 18px;
+    border-color: transparent #e91e63 transparent transparent;
+    
+}
+
+.task-3 p::before {
+    content: attr(data-person);
+    position: absolute;
+    background-color: #ddd;
+    padding: 20px;
+    left: -141px;
+    top: 50%;
+    margin-top: -26px;
+    width: 60px;
+}
+
+.task-4 {
+    margin-top: 30px;
+}
+
+
+.task-4 p {
+    background-color: #eee;
+    padding:20px ;
+    width:500px;
+    margin: 20px auto;
+    counter-increment: my-count;
+    position: relative;
+    border-right: solid 7px #f44336;
+}
+
+.task-4 p::before {
+    content: counter(my-count);
+    padding: 20px;
+    color: white;
+    background-color: #f44336;
+    position: absolute;
+    left: -51px;
+    /* height: 00%; */
+    top: 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

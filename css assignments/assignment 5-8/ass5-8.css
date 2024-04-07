@@ -1,0 +1,48 @@
+.assign-1-shape-1 {
+    background-image: url("../../css/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg");
+    background-repeat: no-repeat;
+    width: 400px;
+    margin:auto;
+    /* padding: 20px; */
+    background-size: 80%;
+    /* background-position:; */
+    /* background-color: blueviolet; */
+
+}
+
+.assign-1-shape-2 {
+    background-imag e: url("../../css/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    width: 400px;
+    background-position: 100%;
+    margin:auto;
+    /* padding: 20px; */
+    /* background-color: rgb(135, 42, 222, 50%); */
+
+}
+
+.assign-1-shape-3 {
+    background-image: url("../../css/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: 0% 100%;
+
+
+    width: 400px;
+    /* margin:auto; */
+    /* padding: 20px; */
+    /* background-color: rgb(135, 42, 222, 5%); */
+
+}
+
+.assign-1-shape-4 {
+    background-image: url("../../css/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    width: 400px;
+    /* margin:auto; */
+    /* padding: 20px; */
+    /* background-color: rgb(135, 42, 222, 5%); */
+
+}

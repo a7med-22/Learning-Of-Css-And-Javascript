@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-1 div {
+    background-color: #eeeeee;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px 15px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow:
+        -5px -5px 2px 1px #e91e63,
+        5px 5px 2px 1px #2196f3;
+    border: solid 2px black;
+    position: relative;
+    counter-increment: count-div;
+}
+
+.task-1 div::before {
+    content: "Element";
+    position: absolute;
+    top: 36%;
+    right: 23%;
+    font-size: 25px;
+
+}
+
+.task-1 div::after {
+    width: 25px;
+    content: counter(count-div);
+    position: absolute;
+    top: -10%;
+    right: 42%;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.task-2 div {
+    margin: 20px 200px;
+    background-color: #efefef;
+    width: 100px;
+    height: 100px;
+    border-top-right-radius: 55px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 55px;
+    box-shadow: 0px 0px 9px 1px black inset;
+}
+
+.task-3 {
+    width: 550px;
+    margin: 20px aut
+}
+
+.task-3 div {
+    background-color: #eeeeee;
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+.task-3 div div {
+    text-align: center;
+    background-color: #dddddd;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 80px 26px;
+    font-size: 33px;
+    position: relative;
+}
+
+.task-3 div div.first-sqr::before {
+    content: "Free";
+    position: absolute;
+    left: 44px;
+    top: 50px;
+    background-color: transparent;
+}
+
+.task-3 div div.second-sqr::before {
+    content: "$30";
+    position: absolute;
+    left: 44px;
+    top: 50px;
+    background-color: transparent;
+}
+
+.task-3 div div.first-sqr::after {
+    content: "Basic";
+    position: absolute;
+    left: -13px;
+    top: -60px;
+    font-size: 18px;
+    color: white;
+    height: 20px;
+    background-color: #03a9f4;
+    width: 163px;
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 700;
+
+}
+
+.task-3 div div.second-sqr::after {
+    content: "Pro";
+    position: absolute;
+    left: -13px;
+    top: -60px;
+    height: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #03a9f4;
+    width: 163px;
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 700;
+}
+
+.task-3 div::before {
+    content: "";
+    background-color: #03a9f4;
+    height: 250px;
+    width: 1px;
+    position: absolute;
+    left: 272px;
+}
+
+.task-3 div::after {
+    content: "Or";
+    color: white;
+    background-color: #03a9f4;
+    font-size: 15px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    position: absolute;
+    left: 257px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 490px;
+    line-height: 25px;
+}

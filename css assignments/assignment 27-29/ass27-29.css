@@ -1,0 +1,58 @@
+body {
+    font-size: 40px;
+}
+
+.parent {
+    background-color: #eee;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.parent div {
+    background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.clear {
+    clear: both;
+}
+
+.one {
+    width: calc(100% - 30px);
+}
+
+.two {
+    width: calc((100% - 60px)/3)
+}
+
+.three {
+    width: calc((100% - 45px)/2)
+}
+
+.four {
+    width: calc((100% - 75px)/4);
+    margin-bottom: 15px;
+}
+
+.child div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #b3b3b3; /* Get The Background From Image */
+    color: black;
+  }
+
+  .child .one {
+    background-color: rgb(179, 179, 179 ,0.1) ;
+  }
+  
+  .child .two {
+    opacity: 0.1;
+  }

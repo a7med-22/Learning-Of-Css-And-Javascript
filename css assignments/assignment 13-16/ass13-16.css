@@ -1,0 +1,33 @@
+body{
+    font-size: 25px;
+}
+div div span {
+    color: red;
+} 
+
+div span {
+    color: blue ;
+}
+
+div p {
+    color: green;
+}
+
+div.title {
+color: green;
+}
+
+div.sec-ass div {
+    color: white;
+    padding: 20px ;
+    margin: 20px;
+    background-color: #a52a2a ;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 50px;
+    overflow: auto;
+}
+
+div.sec-ass div.special {
+    max-width: 100px;
+}

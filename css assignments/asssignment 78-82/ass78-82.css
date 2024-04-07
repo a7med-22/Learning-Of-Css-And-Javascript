@@ -1,0 +1,38 @@
+/* div.main.red {
+    color: red ;
+}
+
+.parent div:nth-child(2) {
+    color: red ;
+} */
+
+/* .parent .baby:only-child {
+    color: red;
+} */
+/* 
+body > [title]:not(.no-need) {
+    color: red;
+} */
+
+/* div:nth-of-type(2) >[title] {
+    color: red;
+} */
+
+/* .four div:nth-child(1) div:nth-child(3) ,.four  div:nth-child(2) div:nth-child(4) {
+    color: red;
+} */
+
+/* .five div:nth-child(1) div:nth-child(5) {
+    color: red;
+} */
+
+/* .six :not(:first-child,:nth-child(4),:nth-child(6),:nth-child(7)) {
+    color:red;
+} */
+
+.six :not(:first-child,h3,:nth-child(7)) {
+    color:red;
+}
+
+
+

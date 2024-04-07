@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px ;
+    
+}
+
+
+.task-1 {
+    width:800px;
+    background-color: #f2f2f4;
+    height: 400px;
+    margin: 40px auto;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.task-1 div {
+    margin: 20px auto;
+    padding: 30px 10px;
+    width: 85%;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+
+}
+
+.special {
+    font-size: 35px;
+    background-color: #dededc;
+}
+
+.task-1:hover {
+    margin: 5px auto;
+    
+    
+}
+
+.task-1:hover .special {
+    margin: 50px auto;
+}
+
+.task-2 div {
+    
+    background-color: #eeeeee !important;
+    width: 400px;
+    font-size: 20px !important;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    border: none !important;
+    text-indent: 600px;
+    text-wrap: nowrap;
+    position: relative;
+    
+}
+
+.task-2 div::before {
+    content: "Elzero";
+    color: black;
+    position:absolute;
+    left: -409px;
+    font-weight: bold;
+
+}
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+  }
+  
+.task-3 div {
+    color : var(--manColor ,red);
+    padding: var(--mainPadding);
+    margin: 20px;
+    border: solid 4px var(--mainColor ,black);
+  }

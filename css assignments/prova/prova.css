@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+
+.page {
+    display: grid;
+    height: 100vh;
+    background-color: #eee;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 10% 80% ;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont cont side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2 {
+    grid-area: logo;
+    background-color: red;
+}
+
+
+
+nav {
+    grid-area: nav;
+    background-color: #9999;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 150px;
+    
+}
+
+section {
+    grid-area: cont;
+    background-color:coral;
+
+}
+
+aside {
+    grid-area: side;
+    background-color: chartreuse;
+}
+
+footer {
+    grid-area: foot;
+    background-color: cadetblue;
+}
+
+
